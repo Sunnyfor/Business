@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <!--设置界面-->
+
+    <!--修改密码-->
+
+    <RelativeLayout
+        android:id="@+id/rl_modify"
+        android:layout_marginTop="@dimen/px50"
+        style="@style/Mine_RelativeLayout_Style">
+
+        <ImageView
+            android:id="@id/icon_1"
+            style="@style/Mine_Icon_ImageView_Style"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/icon_modify" />
+
+        <TextView
+            style="@style/Mine_TextView_Style"
+            android:layout_toEndOf="@id/icon_1"
+            android:text="@string/modify_password" />
+
+        <ImageView
+            style="@style/Mine_More_Button_Style"
+            android:contentDescription="@string/app_icon" />
+
+    </RelativeLayout>
+
+    <View style="@style/View_Line_Style" />
+
+    <!--意见反馈-->
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        style="@style/Mine_RelativeLayout_Style">
+
+        <ImageView
+            android:id="@id/icon_2"
+            style="@style/Mine_Icon_ImageView_Style"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/icon_feedback" />
+
+        <TextView
+            style="@style/Mine_TextView_Style"
+            android:layout_toEndOf="@id/icon_2"
+            android:text="@string/feedback" />
+
+        <ImageView
+            style="@style/Mine_More_Button_Style"
+            android:contentDescription="@string/app_icon" />
+
+    </RelativeLayout>
+
+    <View style="@style/View_Line_Style" />
+
+    <!--当前版本-->
+
+    <RelativeLayout style="@style/Mine_RelativeLayout_Style">
+
+        <ImageView
+            android:id="@id/icon_3"
+            style="@style/Mine_Icon_ImageView_Style"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/icon_version" />
+
+        <TextView
+            android:id="@id/text_1"
+            style="@style/Mine_TextView_Style"
+            android:layout_toEndOf="@id/icon_3"
+            android:text="@string/version" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/Mine_TextView_Style"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/text_1"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/gray_font" />
+
+    </RelativeLayout>
+
+    <View style="@style/View_Line_Style" />
+
+
+    <!--退出登录-->
+
+    <Button
+        android:id="@+id/btn_exit"
+        style="@style/Common_Button_Style"
+        android:layout_marginTop="@dimen/px40"
+        android:background="@drawable/draw_btn_checked"
+        android:text="@string/exit_login" />
+
+
+</LinearLayout>

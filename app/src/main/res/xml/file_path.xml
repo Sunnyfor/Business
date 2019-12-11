@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--第二步：配置filepaths文件，在res目录新建file_path.xml
+            其中：files-path代表的根目录： Context.getFilesDir()
+            external-path代表的根目录: Environment.getExternalStorageDirectory()
+            cache-path代表的根目录: getCacheDir()
+            path 代表要共享的目录
+            name 只是一个标示，随便取。
+
+    ==注意==
+
+        <external-path path="images/" name="camera_photos" />
+
+        这个联合起来的意思就是：可以访问外部存储目录下，images文件夹下的文件。
+        就是说，我可以将这个文件夹下（以我的测试机为例:/storage/emulated/0/images）的所有文件传递给图片编辑页面。
+        但是，因为有很多时候，图片来源不确定，而且每款手机的相册所在的文件名称也可能不一样，
+        如果一一添加的话，很麻烦，而且容易遗漏，这里，
+        我用了一个简单的方法，很方便。代码如下，这样的话，我可以传递外部存储设备根目录下的任意一张图片了（包括其子目录）
+
+        <external-path path="" name="camera_photos" />
+
+        -->
+
+    <external-path
+        name="camera_photos"
+        path="51Park/image/" />
+</resources>

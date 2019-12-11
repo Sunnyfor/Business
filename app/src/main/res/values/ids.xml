@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="status_bar_fake_status_bar_view" type="id" />
+    <item name="status_bar_translucent_view" type="id" />
+
+    <item name="ll_container" type="id" />
+    <item name="et_search" type="id" />
+    <item name="et_username" type="id" />
+    <item name="et_password" type="id" />
+    <item name="cb_eye" type="id" />
+    <item name="tv_plate" type="id" />
+    <item name="tv_park" type="id" />
+    <item name="tv_ticket" type="id" />
+    <item name="tv_nickname" type="id" />
+    <item name="tv_long" type="id" />
+    <item name="tv_name" type="id" />
+    <item name="tv_price" type="id" />
+    <item name="tv_upload" type="id" />
+    <item name="tv_prompt" type="id" />
+    <item name="tv_inTime" type="id" />
+    <item name="tv_seeBigImg" type="id" />
+    <item name="tv_count" type="id" />
+    <item name="tv_coupons" type="id" />
+    <item name="tv_use_coupons" type="id" />
+    <item name="tv_cancel" type="id" />
+
+
+    <!--共用标题栏-->
+
+    <item name="ic_title" type="id" />
+    <item name="tv_title" type="id" />
+
+    <item name="tv_left" type="id" />
+    <item name="iv_left" type="id" />
+
+    <item name="tv_right" type="id" />
+    <item name="iv_right" type="id" />
+
+    <item name="iv_more" type="id" />
+    <item name="tv_more" type="id" />
+
+
+    <!--功能区-->
+
+    <item name="iv_icon" type="id" />
+    <item name="tv_text" type="id" />
+
+
+    <!--常用组件-->
+    <item name="listView" type="id" />
+    <item name="gridView" type="id" />
+    <item name="scrollView" type="id"/>
+    <item name="surfaceView" type="id" />
+    <item name="viewSwitcher" type="id" />
+    <item name="radioGroup" type="id" />
+
+
+
+    <!--文本id-->
+    <item name="text_1" type="id" />
+    <item name="text_2" type="id" />
+    <item name="text_3" type="id" />
+    <item name="text_4" type="id" />
+    <item name="text_5" type="id" />
+    <item name="text_6" type="id" />
+
+    <!--线条id-->
+    <item name="line_1" type="id" />
+    <item name="line_2" type="id" />
+    <item name="line_3" type="id" />
+    <item name="line_4" type="id" />
+    <item name="line_5" type="id" />
+    <item name="line_6" type="id" />
+
+    <!--图标id-->
+    <item name="icon_1" type="id" />
+    <item name="icon_2" type="id" />
+    <item name="icon_3" type="id" />
+    <item name="icon_4" type="id" />
+    <item name="icon_5" type="id" />
+
+
+</resources>

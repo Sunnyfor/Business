@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 抽屉内容 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/px70"
+        android:layout_height="@dimen/px88"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/icon_back" />
+
+
+    <ImageView
+        android:layout_width="@dimen/px200"
+        android:layout_height="@dimen/px200"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px72"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/icon_head" />
+
+    <TextView
+        android:id="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px32"
+        android:layout_marginTop="@dimen/px40"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px40" />
+
+
+    <!--所属车场-->
+
+    <RelativeLayout style="@style/Mine_RelativeLayout_Style">
+
+        <TextView
+            android:id="@id/text_1"
+            style="@style/Mine_TextView_Style"
+            android:layout_marginStart="@dimen/px50"
+            android:text="@string/belong_to_park" />
+
+        <TextView
+            android:id="@id/tv_address"
+            style="@style/Mine_TextView_Style"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/text_1"
+            android:gravity="end|center_vertical"
+            android:text="@string/app_text" />
+
+    </RelativeLayout>
+
+    <View style="@style/View_Line_Style" />
+
+    <!--账户余额-->
+
+    <RelativeLayout style="@style/Mine_RelativeLayout_Style">
+
+        <TextView
+            android:id="@id/text_1"
+            style="@style/Mine_TextView_Style"
+            android:layout_marginStart="@dimen/px50"
+            android:text="@string/username_balance" />
+
+        <TextView
+            android:id="@id/tv_long"
+            style="@style/Mine_TextView_Style"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/text_1"
+            android:gravity="end|center_vertical"
+            android:text="@string/app_text" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px50"
+            android:paddingTop="@dimen/px30"
+            android:text="@string/one"
+            android:textColor="@color/gray_prompt"
+            android:textSize="@dimen/px28" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/px50"
+            android:layout_marginStart="@dimen/px20"
+            android:paddingTop="@dimen/px30"
+            android:text="@string/prompt_balance_1"
+            android:textColor="@color/gray_prompt"
+            android:textSize="@dimen/px28" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px50"
+            android:text="@string/two"
+            android:textColor="@color/gray_prompt"
+            android:textSize="@dimen/px28" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px50"
+            android:layout_marginEnd="@dimen/px50"
+            android:layout_marginStart="@dimen/px20"
+            android:text="@string/prompt_balance_2"
+            android:textColor="@color/gray_prompt"
+            android:textSize="@dimen/px28" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

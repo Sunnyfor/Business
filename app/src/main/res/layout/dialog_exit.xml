@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px540"
+    android:layout_height="@dimen/px360"
+    android:background="@drawable/draw_dialog_bg">
+
+    <!-- 退出登录 -->
+
+
+    <!-- 头部标题 -->
+
+    <ImageView
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px60"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/icon_exit_dialog" />
+
+    <!-- 主体展示的文字内容 -->
+
+    <TextView
+        android:id="@id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px30"
+        android:gravity="center"
+        android:text="@string/are_you_sure_exit"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px36" />
+
+
+    <!-- 【底部选择按钮】 -->
+
+    <LinearLayout
+        android:id="@id/text_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:layout_alignParentBottom="true">
+
+        <!-- 取消按钮 -->
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px36" />
+
+
+        <View
+            android:layout_width="@dimen/px1"
+            android:layout_height="wrap_content"
+            android:background="@color/line_gray" />
+
+        <!-- 确定按钮 -->
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/sure"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/px36" />
+    </LinearLayout>
+
+    <View
+        style="@style/View_Line_Style"
+        android:layout_above="@id/text_5" />
+
+</RelativeLayout>

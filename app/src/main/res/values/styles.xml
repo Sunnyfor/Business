@@ -1,0 +1,223 @@
+<resources>
+
+
+    <!--图表区标题栏切换按钮样式-->
+    <style name="Chart_RadioButton_Nav_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/draw_chart_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/px32</item>
+        <item name="android:textColor">@drawable/font_chart_rbtn</item>
+    </style>
+
+    <!--对话框去除背景黑框样式-->
+    <style name="Dialog_Theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!--修改密码框-样式表-->
+    <style name="EditText_Reset_Password_Style">
+        <item name="android:layout_width">@dimen/px600</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingStart">@dimen/px30</item>
+        <item name="android:paddingEnd">@dimen/px10</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:digits">0123456789QqWwEeRrTtYyUuIiOoPpLlKkJjHhGgFfDdSsAaZzXxCcVvBbNnMm
+        </item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:textColorHint">@color/gray_font</item>
+    </style>
+
+    <!--搜索框下方提示语样式-->
+    <style name="TextView_Search_Prompt_Style">
+        <item name="android:layout_width">@dimen/px540</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px33</item>
+        <item name="android:layout_gravity">center_horizontal|bottom</item>
+        <item name="android:drawableStart">@mipmap/icon_search_round</item>
+        <item name="android:drawablePadding">@dimen/px10</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+
+    <!--退出登录对话框样式-->
+    <style name="exit_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!--个人中心字体样式表-->
+    <style name="Home_Mine_Font_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px90</item>
+        <item name="android:drawablePadding">@dimen/px30</item>
+        <!--<item name="android:layout_marginTop">@dimen/px52</item>-->
+        <item name="android:layout_marginStart">@dimen/px46</item>
+        <item name="android:textSize">@dimen/px32</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--设置页面字体样式表-->
+    <style name="Setting_Font_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px90</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingStart">@dimen/px40</item>
+        <item name="android:paddingEnd">@dimen/px40</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableEnd">@mipmap/icon_back</item>
+        <item name="android:textSize">@dimen/px32</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+    <!--子条目-外层布局-样式表-->
+    <style name="Mine_RelativeLayout_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px94</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--子条目-图标—样式表-->
+    <style name="Mine_Icon_ImageView_Style">
+        <item name="android:layout_width">@dimen/px94</item>
+        <item name="android:layout_height">@dimen/px94</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--子条目－文字－样式表-->
+    <style name="Mine_TextView_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/px37</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <!--子条目－更多按钮－样式表-->
+    <style name="Mine_More_Button_Style">
+        <item name="android:layout_width">@dimen/px13</item>
+        <item name="android:layout_height">@dimen/px26</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">@dimen/px37</item>
+        <item name="android:src">@mipmap/btn_more</item>
+    </style>
+
+    <!--修改密码-输入框-样式表-->
+    <style name="EditText_Modify_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px88</item>
+        <item name="android:layout_marginStart">@dimen/px40</item>
+        <item name="android:layout_marginEnd">@dimen/px40</item>
+        <item name="android:paddingStart">@dimen/px20</item>
+        <item name="android:paddingEnd">@dimen/px20</item>
+        <item name="android:background">@drawable/draw_border_all</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:textColorHint">@color/gray_font</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:inputType">textVisiblePassword</item>
+        <item name="android:digits">0123456789QqWwEeRrTtYyUuIiOoPpLlKkJjHhGgFfDdSsAaZzXxCcVvBbNnMm
+        </item>
+    </style>
+
+    <!--登录-输入框-样式表-->
+    <style name="EditText_Login_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_marginEnd">@dimen/px40</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:textColorHint">@color/gray_hint</item>
+        <item name="android:textSize">@dimen/px30</item>
+    </style>
+
+
+    <!--普通分割线-->
+
+    <style name="View_Line_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px1</item>
+        <item name="android:background">@color/line_gray</item>
+    </style>
+
+    <!--共用-返回按钮-样式表-->
+
+    <style name="Back_Button_Style">
+        <item name="android:layout_width">@dimen/px100</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:src">@mipmap/icon_back</item>
+    </style>
+
+    <!--加载框样式-->
+
+    <style name="Loading_Dialog_Style" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!--【Button】点击和未点击时的样式-->
+
+    <style name="Common_Button_Style">
+        <item name="android:layout_width">@dimen/px670</item>
+        <item name="android:layout_height">@dimen/px100</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/draw_btn_unchecked</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <!--【布局】全屏垂直灰色 -->
+    <style name="Layout_Match_Vertical_Style">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/bg_theme</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--【布局】包裹垂直灰色 -->
+    <style name="Layout_Wrap_Vertical_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/bg_theme</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--【布局】包裹垂直（白色）-->
+    <style name="Layout_Wrap_Vertical_White_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!-- =======================Base application theme.======================= -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- =======================Base application theme.< END >======================= -->
+
+</resources>

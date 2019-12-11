@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/capture_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 条码维码扫描界面 -->
+
+
+    <!--提供一个可见区域-->
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/top_mask"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px230"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_scan"
+        android:contentDescription="@string/app_name" />
+
+
+    <!-- 扫描框 -->
+
+    <RelativeLayout
+        android:id="@+id/capture_crop_layout"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/top_mask"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bg_scan"
+        android:contentDescription="@string/app_name">
+
+        <!-- 扫描线 -->
+
+        <ImageView
+            android:id="@+id/capture_scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/bg_scan_line0" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/bottom_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/capture_crop_layout"
+        android:background="@color/bg_scan"
+        android:contentDescription="@string/app_name" />
+
+    <!--扫描提示文字-->
+
+    <TextView
+        android:id="@+id/scan_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capture_crop_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px22"
+        android:text="@string/scan_hint"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px26" />
+
+    <!-- 闪光灯 -->
+
+    <CheckBox
+        android:id="@+id/iv_light"
+        android:layout_width="@dimen/px100"
+        android:layout_height="@dimen/px100"
+        android:layout_below="@id/scan_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px72"
+        android:background="@drawable/draw_scan_light"
+        android:button="@null" />
+
+
+    <ImageView
+        android:id="@+id/left_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_mask"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/top_mask"
+        android:layout_toStartOf="@id/capture_crop_layout"
+        android:background="@color/bg_scan"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/right_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_mask"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/top_mask"
+        android:layout_toEndOf="@id/capture_crop_layout"
+        android:background="@color/bg_scan"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>
+

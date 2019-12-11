@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style"
+    android:background="@color/transparent">
+
+    <!--全免优惠券-->
+
+    <RelativeLayout
+        android:layout_width="@dimen/px550"
+        android:layout_height="@dimen/px136"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bg_choice_coupons">
+
+        <!--今日可用张数-->
+
+        <TextView
+            android:id="@id/tv_count"
+            android:layout_width="@dimen/px220"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/px34"
+            android:layout_marginEnd="@dimen/px20"
+            android:text=""
+            android:textColor="@color/choice_coupons_font"
+            android:textSize="@dimen/px24" />
+
+        <!--优惠券(文字)-->
+
+        <TextView
+            android:id="@id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_count"
+            android:layout_toStartOf="@id/tv_count"
+            android:text="@string/coupons"
+            android:textColor="@color/choice_coupons_font"
+            android:textSize="@dimen/px44" />
+
+        <!--优惠券(面额)-->
+
+        <TextView
+            android:id="@id/tv_coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_count"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/px50"
+            android:layout_toStartOf="@id/text_1"
+            android:gravity="center_horizontal"
+            android:text="@string/free"
+            android:textColor="@color/choice_coupons_font"
+            android:textSize="@dimen/px60" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

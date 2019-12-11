@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@mipmap/bg_home">
+
+
+    <!--标题栏-->
+
+    <ImageView
+        android:id="@+id/tv_mine"
+        android:layout_width="@dimen/px100"
+        android:layout_height="@dimen/px100"
+        android:contentDescription="@string/app_icon"
+        android:padding="@dimen/px30"
+        android:src="@mipmap/icon_mine" />
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="@dimen/px540"
+        android:layout_height="@dimen/px196"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px198"
+        android:background="@drawable/draw_bg_home">
+
+        <ImageView
+            android:id="@+id/icon_1"
+            android:layout_width="@dimen/px75"
+            android:layout_height="@dimen/px75"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/px68"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/icon_search_plate" />
+
+        <TextView
+            android:id="@id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px80"
+            android:layout_marginTop="@dimen/px50"
+            android:layout_toEndOf="@id/icon_1"
+            android:text="@string/search_plate"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px54" />
+
+        <TextView
+            android:id="@id/text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_1"
+            android:layout_marginStart="@dimen/px60"
+            android:layout_marginTop="@dimen/px20"
+            android:layout_toEndOf="@id/icon_1"
+            android:text="@string/search_plate_number"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px26" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_scan"
+        android:layout_width="@dimen/px540"
+        android:layout_height="@dimen/px196"
+        android:layout_below="@id/rl_search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px102"
+        android:background="@drawable/draw_bg_home">
+
+        <ImageView
+            android:id="@+id/icon_2"
+            android:layout_width="@dimen/px75"
+            android:layout_height="@dimen/px75"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/px68"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/icon_scan_ticket" />
+
+        <TextView
+            android:id="@id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px80"
+            android:layout_marginTop="@dimen/px50"
+            android:layout_toEndOf="@id/icon_2"
+            android:text="@string/scan_ticket"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px54" />
+
+        <TextView
+            android:id="@id/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_2"
+            android:layout_marginStart="@dimen/px70"
+            android:layout_marginTop="@dimen/px20"
+            android:layout_toEndOf="@id/icon_2"
+            android:text="@string/scan_park_ticket"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px26" />
+    </RelativeLayout>
+
+    <!-- 底线 无忧停车商家-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px30"
+        android:gravity="center">
+
+
+        <View
+            android:layout_width="@dimen/px180"
+            android:layout_height="@dimen/px2"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:layout_width="@dimen/px280"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/provide_technical_support_from_51park"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px22" />
+
+        <View
+            android:layout_width="@dimen/px180"
+            android:layout_height="@dimen/px2"
+            android:background="@color/line_gray" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

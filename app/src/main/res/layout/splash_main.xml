@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <ImageView
+        android:id="@id/iv_icon"
+        style="@style/Layout_Match_Vertical_Style"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/bg_splash" />
+
+</RelativeLayout>

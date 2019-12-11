@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:layout_height="@dimen/px564">
+
+    <ImageView
+        android:id="@id/iv_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_park_default"
+        android:contentDescription="@string/app_icon"
+        android:scaleType="fitXY" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.4"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_alignParentBottom="true">
+
+        <!--看大图-->
+
+        <TextView
+            android:id="@id/tv_seeBigImg"
+            android:layout_width="@dimen/px128"
+            android:layout_height="@dimen/px52"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/px54"
+            android:background="@drawable/draw_bg_see_big_img"
+            android:gravity="center"
+            android:text="@string/see_big_image"
+            android:textColor="@color/orange_font" />
+
+        <!--车牌号-->
+
+        <TextView
+            android:id="@id/tv_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/px54"
+            android:layout_marginTop="@dimen/px15"
+            android:layout_toStartOf="@id/tv_seeBigImg"
+            android:text="@string/app_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px32" />
+
+
+        <!--入场-->
+
+        <View
+            android:layout_width="@dimen/px60"
+            android:layout_height="@dimen/px30"
+            android:layout_alignStart="@id/tv_plate"
+            android:layout_below="@id/tv_plate"
+            android:layout_marginTop="@dimen/px5"
+            android:alpha="0.5"
+            android:background="@drawable/draw_btn_checked" />
+
+        <TextView
+            android:id="@id/text_1"
+            android:layout_width="@dimen/px60"
+            android:layout_height="@dimen/px30"
+            android:layout_alignStart="@id/tv_plate"
+            android:layout_below="@id/tv_plate"
+            android:layout_marginTop="@dimen/px5"
+            android:gravity="center"
+            android:text="@string/into"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px20" />
+
+        <!--入场时间-->
+
+        <TextView
+            android:id="@id/tv_inTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_1"
+            android:layout_below="@id/tv_plate"
+            android:layout_marginStart="@dimen/px20"
+            android:layout_toEndOf="@id/text_1"
+            android:text="@string/app_text"
+            android:textColor="@color/white_font"
+            android:textSize="@dimen/px28" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

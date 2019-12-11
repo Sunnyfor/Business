@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/take_photo"
+        android:textColor="@color/orange_font"
+        android:textSize="@dimen/px40" />
+
+    <View style="@style/View_Line_Style" />
+
+    <TextView
+        android:id="@id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/orange_font"
+        android:textSize="@dimen/px40" />
+
+</LinearLayout>

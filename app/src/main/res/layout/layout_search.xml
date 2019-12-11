@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style">
+
+    <!--带搜索框的标题栏-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90"
+        android:layout_marginEnd="@dimen/px16"
+        android:layout_marginStart="@dimen/px16"
+        android:gravity="center">
+
+        <!--取消／搜索按钮-->
+
+        <TextView
+            android:id="@id/tv_cancel"
+            android:layout_width="@dimen/px100"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/search" />
+
+        <!--搜索框-->
+
+        <com.zuoyu.business.widget.ClearEditText
+            android:id="@id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px60"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/tv_cancel"
+            android:background="@mipmap/bg_search"
+            android:hint="@string/please_input_plate"
+            android:imeOptions="actionSearch"
+            android:maxLength="8"
+            android:paddingEnd="@dimen/px20"
+            android:paddingStart="@dimen/px100"
+            android:textColorHint="@color/gray_hint"
+            android:textSize="@dimen/px30" />
+
+        <!--android:focusable="true"
+            android:focusableInTouchMode="true"-->
+
+        <!--搜索按钮-->
+
+        <ImageView
+            android:layout_width="@dimen/px40"
+            android:layout_height="@dimen/px40"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/px30"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/icon_search" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

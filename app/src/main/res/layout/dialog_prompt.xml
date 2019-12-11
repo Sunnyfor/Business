@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px540"
+    android:layout_height="@dimen/px382"
+    android:background="@drawable/draw_dialog_bg">
+
+    <!-- 401认证失败 -->
+
+
+    <!-- 头部标题 -->
+
+    <ImageView
+        android:id="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px50"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/icon_exit_dialog" />
+
+    <!-- 主体展示的文字内容 -->
+
+    <TextView
+        android:id="@id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px30"
+        android:gravity="center"
+        android:text="@string/please_login_again"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px36" />
+
+
+    <!-- 确定按钮 -->
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="@string/sure"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/px36" />
+
+    <View
+        style="@style/View_Line_Style"
+        android:layout_above="@id/btn_sure" />
+
+</RelativeLayout>

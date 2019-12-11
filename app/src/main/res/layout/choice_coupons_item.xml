@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style"
+    android:background="@color/transparent">
+
+
+    <LinearLayout
+        android:id="@+id/rl_coupons"
+        android:layout_width="@dimen/px550"
+        android:layout_height="@dimen/px136"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bg_choice_coupons">
+
+        <LinearLayout
+            android:layout_width="@dimen/px300"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/px48"
+            android:orientation="vertical">
+
+            <!--优惠券名称-->
+
+            <TextView
+                android:id="@id/tv_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px32"
+                android:ellipsize="end"
+                android:maxEms="16"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:text="@string/app_text"
+                android:textColor="@color/choice_coupons_font"
+                android:textSize="@dimen/px26" />
+
+
+            <!--今日可用张数-->
+
+            <TextView
+                android:id="@id/tv_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px16"
+                android:text="@string/app_text"
+                android:textColor="@color/choice_coupons_font"
+                android:textSize="@dimen/px24" />
+
+        </LinearLayout>
+
+        <!--优惠券(面额)-->
+
+        <TextView
+            android:id="@id/tv_coupons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/px40"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="@color/choice_coupons_font"
+            android:textSize="@dimen/px60" />
+
+    </LinearLayout>
+
+</RelativeLayout>

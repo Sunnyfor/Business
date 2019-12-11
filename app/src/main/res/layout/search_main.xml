@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <!--带搜索框的标题栏-->
+
+    <include layout="@layout/layout_search" />
+
+    <ViewSwitcher
+        android:id="@id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+        <LinearLayout
+            android:id="@+id/ll_production"
+            style="@style/Layout_Match_Vertical_Style"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="@dimen/px98"
+                android:layout_height="@dimen/px98"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px80"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_search_sorry" />
+
+            <TextView
+                style="@style/TextView_Search_Prompt_Style"
+                android:layout_marginTop="@dimen/px62"
+                android:text="@string/prompt_search1" />
+
+            <TextView
+                style="@style/TextView_Search_Prompt_Style"
+                android:text="@string/prompt_search2" />
+
+            <TextView
+                style="@style/TextView_Search_Prompt_Style"
+                android:text="@string/prompt_search3" />
+        </LinearLayout>
+
+
+        <include layout="@layout/layout_pull" />
+
+    </ViewSwitcher>
+
+
+</LinearLayout>

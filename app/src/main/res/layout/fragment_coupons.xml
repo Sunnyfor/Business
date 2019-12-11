@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_total"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginBottom="@dimen/px20"-->
+    <!--android:layout_marginEnd="@dimen/px36"-->
+    <!--android:layout_marginTop="@dimen/px20"-->
+    <!--android:text="@string/zero"-->
+    <!--android:visibility="invisible"-->
+    <!--android:textColor="@color/gray_font"-->
+    <!--android:textSize="@dimen/px24" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_alreadyUsed"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignTop="@id/tv_total"-->
+    <!--android:layout_toStartOf="@id/tv_total"-->
+    <!--android:text="@string/zero"-->
+    <!--android:textColor="@color/orange"-->
+    <!--android:textSize="@dimen/px24" />-->
+
+    <!--<TextView-->
+    <!--android:id="@id/text_1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignTop="@id/tv_total"-->
+    <!--android:layout_toStartOf="@id/tv_alreadyUsed"-->
+    <!--android:text="@string/today_use_colon"-->
+    <!--android:textColor="@color/gray_font"-->
+    <!--android:textSize="@dimen/px24" />-->
+
+    <View
+        android:id="@id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px30" />
+
+    <include
+        layout="@layout/layout_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_1" />
+
+
+</RelativeLayout>

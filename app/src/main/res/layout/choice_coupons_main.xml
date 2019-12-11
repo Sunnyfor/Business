@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style"
+    android:background="@mipmap/bg_frosted_glass"
+    android:gravity="center_horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="@dimen/px620"
+        android:layout_height="@dimen/px800"
+        android:layout_marginTop="@dimen/px200"
+        android:background="@drawable/draw_dialog_bg">
+
+        <!--选项卡-->
+
+        <RadioGroup
+            android:id="@id/radioGroup"
+            android:layout_width="@dimen/px300"
+            android:layout_height="@dimen/px60"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/px36"
+            android:layout_marginTop="@dimen/px32"
+            android:background="@drawable/shape_chart_nav_bg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_coupons"
+                style="@style/Chart_RadioButton_Nav_Style"
+                android:layout_weight="1"
+                android:text="@string/coupons" />
+
+            <RadioButton
+                android:id="@+id/rb_balance"
+                style="@style/Chart_RadioButton_Nav_Style"
+                android:layout_weight="1"
+                android:text="@string/balance_discount" />
+        </RadioGroup>
+
+        <!--优惠选择-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px36"
+            android:layout_marginTop="@dimen/px36"
+            android:layout_toStartOf="@id/radioGroup"
+            android:gravity="start"
+            android:text="@string/discount_choice"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px36" />
+
+        <!--数据列表容器-->
+
+        <LinearLayout
+            android:id="@id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/radioGroup"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/px50"
+            android:layout_marginTop="@dimen/px50"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+    <!--数据为空时展示-->
+
+    <RelativeLayout
+        android:id="@+id/emptyRLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px100"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/emptyIcon"
+            android:layout_width="@dimen/px490"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/bg_coupons_already_used" />
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px30"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px28" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/px68"
+        android:layout_height="@dimen/px68"
+        android:layout_marginTop="@dimen/px80"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/icon_close" />
+
+</LinearLayout>

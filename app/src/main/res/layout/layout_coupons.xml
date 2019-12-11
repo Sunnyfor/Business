@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zuoyu.business.widget.pullable.PullToRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="@dimen/px620"
+        android:layout_height="@dimen/px792"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/draw_dialog_bg">
+
+        <include layout="@layout/layout_pull_header_down_refresh" />
+
+        <com.zuoyu.business.widget.pullable.PullListView
+            android:id="@id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="#00000000"
+            android:paddingTop="@dimen/px50" />
+
+
+        <include layout="@layout/layout_pull_footer_up_loading" />
+
+    </com.zuoyu.business.widget.pullable.PullToRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/emptyRLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/emptyIcon"
+            android:layout_width="@dimen/px490"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/bg_coupons_already_used" />
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px30"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px28" />
+    </RelativeLayout>
+
+
+</FrameLayout>

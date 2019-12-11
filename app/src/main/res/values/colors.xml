@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#9bc66f</color>
+
+    <!--<color name="bg_scan">#393936</color>-->
+    <color name="bg_scan">#7f000000</color>
+    <color name="bg_home">#EFEFEF</color>
+
+    <color name="blue">#44B2FE</color>
+    <color name="blue_btn">#DBF1F9</color>
+    <color name="blue_font">#4BB5EE</color>
+    <color name="blue_line">#25AEEE</color>
+
+
+    <color name="transparent">#00000000</color>
+
+    <color name="bg_theme">#F2F2F2</color>
+    <color name="gray_hint">#B7B4B4</color>
+    <color name="gray_font">#999999</color>
+    <color name="line_gray">#E5E5E5</color>
+    <color name="gray_line_title">#B0B0B0</color>
+    <color name="gray_prompt">#C6C6C6</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_font">#D2D2D2</color>
+    <color name="black">#000000</color>
+    <color name="black_font">#333333</color>
+    <color name="black_loading">#222222</color>
+
+    <color name="red">#FF0000</color>
+    <color name="red_bg">#EA5F55</color>
+    <color name="red_btn">#F8CAC3</color>
+    <color name="red_font">#F25A29</color>
+
+    <color name="orange">#FBBC55</color>
+    <color name="orange_font">#F3A826</color>
+    <color name="orange_font_item">#FBBC55</color>
+
+
+    <color name="btn_checked">#FBBC55</color>
+    <color name="btn_unchecked">#E5E5E5</color>
+    <color name="choice_coupons_font">#FFFEE9</color>
+
+</resources>

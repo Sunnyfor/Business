@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px46"
+        android:layout_marginTop="@dimen/px40"
+        android:text="@string/username_balance"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px36" />
+
+    <!--未充值-->
+
+    <TextView
+        android:id="@id/tv_long"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px90"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/not_recharge"
+        android:textColor="@color/black"
+        android:textSize="@dimen/px48" />
+
+    <!--x小时x分钟-->
+
+    <LinearLayout
+        android:id="@+id/ll_long"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_text"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/px48" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px28"
+            android:text="@string/hour"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px48" />
+
+        <TextView
+            android:id="@+id/tv_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px28"
+            android:text="@string/app_text"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/px48" />
+
+
+        <TextView
+            android:id="@id/tv_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px28"
+            android:text="@string/minute"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px48" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px46"
+        android:layout_marginTop="@dimen/px20"
+        android:text="@string/Balance_deduction"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px36" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:layout_marginTop="@dimen/px36"
+        android:gravity="center_vertical">
+
+        <com.zuoyu.business.widget.EasyPickerView
+            android:id="@+id/epv_hour"
+            android:layout_width="@dimen/px124"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/px46"
+            android:background="@drawable/draw_border_picker"
+            custom:epvMaxShowNum="3"
+            custom:epvRecycleMode="false"
+            custom:epvTextColor="@color/orange"
+            custom:epvTextMaxScale="2.0"
+            custom:epvTextMinAlpha="0.7"
+            custom:epvTextPadding="@dimen/px5"
+            custom:epvTextSize="@dimen/px44" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px28"
+            android:text="@string/hour"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px48" />
+
+        <com.zuoyu.business.widget.EasyPickerView
+            android:id="@+id/epv_minute"
+            android:layout_width="@dimen/px124"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/px46"
+            android:background="@drawable/draw_border_picker"
+            custom:epvMaxShowNum="3"
+            custom:epvRecycleMode="true"
+            custom:epvTextColor="@color/orange"
+            custom:epvTextMaxScale="2.0"
+            custom:epvTextMinAlpha="0.7"
+            custom:epvTextPadding="@dimen/px5"
+            custom:epvTextSize="@dimen/px44" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px28"
+            android:text="@string/minute"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px48" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px30"
+        android:text="@string/discount_long"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px30" />
+
+    <Button
+        android:id="@id/btn_sure"
+        style="@style/Common_Button_Style"
+        android:layout_width="@dimen/px200"
+        android:layout_height="@dimen/px88"
+        android:layout_marginTop="@dimen/px90"
+        android:text="@string/sure" />
+</LinearLayout>
